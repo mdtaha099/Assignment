@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -73,11 +73,11 @@ public class MainActivity2 extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.getValue().toString() == "true"){
                     gotoMarket.setVisibility(View.VISIBLE);
-                    Toast.makeText(MainActivity2.this, "Market Open!" , Toast.LENGTH_SHORT).show();
+
                 }
                 else{
                     gotoMarket.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity2.this, "Market Close!" , Toast.LENGTH_SHORT).show();
+
                 }
             }
 
