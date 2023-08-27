@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_c">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Add Product"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/item_name_toolbar"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_today_tv"
+        android:layout_gravity="right"
+        android:textSize="15sp"
+        android:textColor="@color/main_c"
+        android:text="Please enter item's name*"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="Enter Product"
+        android:layout_marginTop="150dp"
+        android:id="@+id/item_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_name_tv"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:text="Please enter item's name*"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        android:hint="Price"
+        android:layout_marginTop="30dp"
+        android:id="@+id/item_price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/error_price_tv"
+        android:textColor="@color/red"
+        android:text="Please enter item's price*"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pick a date"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/date_tv"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePick"
+        android:text="Pick Date"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Item"
+        android:id="@+id/add_btn"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/main_c"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

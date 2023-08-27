@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/advent_pro</item>
+        <item>@font/arimo</item>
+        <item>@font/belgrano</item>
+        <item>@font/montserrat_light</item>
+    </array>
+</resources>
