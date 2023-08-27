@@ -130,28 +130,6 @@ public class StoreiActivity extends AppCompatActivity {
 
     }
 
-//    private void ReadDataFromFirebase() {
-//        fireRef.get()
-//                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-//                    @Override
-//                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-//                        if(documentSnapshot.exists()) {
-//                            String fitemname = documentSnapshot.getString("name");
-//
-//                            String fitemprice = documentSnapshot.getString("price");
-//                            Date d = documentSnapshot.getDate("date");
-//                            Date cur = new Date();
-//                            getNoOfDays(d);
-//
-//                            itemName.setText(fitemname);
-//                            itemPrice.setText(fitemprice);
-//                            noOfDAys.setText("Duration of the item is on the market for- \n" + daysBetween);
-//                        }
-//
-//                    }
-//                });
-//    }
-
 
     //Calculate the no. of days
     private void getNoOfDays(String d) {
